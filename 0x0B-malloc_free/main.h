@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+int main(int ac, char *av[]);
 char *create_array(unsigned int size, char c);
 int _putchar(char c);
 char *_strdup(char *str);
@@ -7,5 +8,7 @@ char *str_concat(char *s1, char *s2);
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
-int main(int ac, char *av[]);
+int count_word(char *s);
+char **strtow(char *str);
+int main(void);
 #endif
